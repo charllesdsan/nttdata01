@@ -1,0 +1,20 @@
+{
+  "name": "nttdata01",
+  "version": "1.0.0",
+  "description": "test company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cyOpen": "cypress open",
+    "cyRunTest": "cypress run --browser chrome --spec cypress/e2e/Cadastros/GF-BloqueioLista.cy.js  --env grepTags=@fabril"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/grep": "^4.1.1",
+    "@faker-js/faker": "^10.0.0",
+    "cypress": "^14.5.1",
+    "cypress-plugin-tab": "^1.0.5"
+  }
+}
