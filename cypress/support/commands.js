@@ -23,3 +23,19 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add('visitPage', function(usuario, page){
+    
+  let token
+ 
+  cy.readFile(`cypress/fixtures/respAuthLogin${Cypress.env(usuario).id}.json`).its('authorization').then((value) => { token = value }) 
+
+  cy.visit( `${Cypress.env('urlbaseFront')}${page}`, {                
+    onBeforeLoad: (browser) => {
+      browser.localStorage.setItem('serverest/userEmail', Cypress.env(usuario).login);
+      browser.localStorage.setItem('serverest/userNome', Cypress.env(usuario).nome);
+      browser.localStorage.setItem('serverest/userToken', token);
+    }
+  });
+});
