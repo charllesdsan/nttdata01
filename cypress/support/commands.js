@@ -25,6 +25,15 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 
+/**
+ * comando criado para permitir o acesso as páginas do front-end
+ * sem a necessidade de realizar o login via interface gráfica.
+ * O comando injeta os dados no localStorage do browser.
+ * 
+ * @author Charlles Santana
+ * @param {string} usuario - nome do usuario conforme definido no cypress.env.json
+ * @param {string} page - url da página a ser acessada 
+ */
 Cypress.Commands.add('visitPage', function(usuario, page){
     
   let token
@@ -33,7 +42,7 @@ Cypress.Commands.add('visitPage', function(usuario, page){
 
   cy.visit( `${Cypress.env('urlbaseFront')}${page}`, {                
     onBeforeLoad: (browser) => {
-      browser.localStorage.setItem('serverest/userEmail', Cypress.env(usuario).login);
+      browser.localStorage.setItem('serverest/userEmail', Cypress.env(usuario).email);
       browser.localStorage.setItem('serverest/userNome', Cypress.env(usuario).nome);
       browser.localStorage.setItem('serverest/userToken', token);
     }
