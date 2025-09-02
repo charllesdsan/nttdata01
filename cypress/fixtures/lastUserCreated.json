@@ -1,0 +1,68 @@
+{
+  "body": {
+    "message": "Cadastro realizado com sucesso",
+    "_id": "cODOiDrC6VTus6Oo"
+  },
+  "headers": {
+    "access-control-allow-origin": "*",
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=15552000; includeSubDomains",
+    "x-download-options": "noopen",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "content-type": "application/json; charset=utf-8",
+    "x-cloud-trace-context": "ca0d7dfbf8291c3222dfbdea605826ca",
+    "date": "Mon, 01 Sep 2025 15:07:46 GMT",
+    "server": "Google Frontend",
+    "content-length": "82"
+  },
+  "status": 201,
+  "statusText": "Created",
+  "isOkStatusCode": true,
+  "requestHeaders": {
+    "Connection": "keep-alive",
+    "authorization": "Bearer undefined",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate",
+    "content-type": "application/json",
+    "content-length": 109
+  },
+  "requestBody": "{\"nome\":\"cy-happy-go-lucky\",\"email\":\"cy-Eula.Dibbert@hotmail.com\",\"password\":\"123456\",\"administrador\":\"true\"}",
+  "duration": 240,
+  "allRequestResponses": [
+    {
+      "Request Body": "{\"nome\":\"cy-happy-go-lucky\",\"email\":\"cy-Eula.Dibbert@hotmail.com\",\"password\":\"123456\",\"administrador\":\"true\"}",
+      "Request Headers": {
+        "Connection": "keep-alive",
+        "authorization": "Bearer undefined",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate",
+        "content-type": "application/json",
+        "content-length": 109
+      },
+      "Request URL": "https://serverest.dev/usuarios",
+      "Response Body": {
+        "message": "Cadastro realizado com sucesso",
+        "_id": "cODOiDrC6VTus6Oo"
+      },
+      "Response Headers": {
+        "access-control-allow-origin": "*",
+        "x-dns-prefetch-control": "off",
+        "x-frame-options": "SAMEORIGIN",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-download-options": "noopen",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "content-type": "application/json; charset=utf-8",
+        "x-cloud-trace-context": "ca0d7dfbf8291c3222dfbdea605826ca",
+        "date": "Mon, 01 Sep 2025 15:07:46 GMT",
+        "server": "Google Frontend",
+        "content-length": "82"
+      },
+      "Response Status": 201
+    }
+  ]
+}
