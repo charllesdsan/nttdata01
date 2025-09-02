@@ -29,7 +29,7 @@ describe('Exclusão de Produtos', {tags: '@priority_high'}, function() {
 
     //Salva o nome do produto a ser excluido
     cy.get('tbody > :nth-last-child(1) > :nth-child(1)').invoke('text').then((value) => {
-      ultimoProduto = value;
+      ultimoProduto = value.trim;
       cy.log('Nome do produto:', ultimoProduto);
     })
     //Efetua a exclusão
